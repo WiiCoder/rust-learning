@@ -1,6 +1,7 @@
 mod base_01;
 mod base_02;
 mod base_03;
+mod base_04;
 
 fn main() {
     // base_01: variable
@@ -49,4 +50,9 @@ fn main() {
         "========== {} ==========",
         "base_03: Ownership and borrowing end"
     );
+
+    // base_04: quote type
+    println!("========== {} ==========", "base_04: quote type start");
+    base_04::string_slice();
+    println!("========== {} ==========", "base_04: quote type end");
 }

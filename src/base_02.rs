@@ -191,13 +191,13 @@ pub fn fn_clear(text: &mut String) -> (){
 }
 
 // 没有返回值的函数，发散函数 '!'
-pub fn fn_dead_end() -> ! {
-    panic!("😡崩溃吧！");
-}
+// pub fn fn_dead_end() -> ! {
+//     panic!("😡崩溃吧！");
+// }
 
 // 无法跳出循环，也是永不返回
-pub fn fn_forever() -> ! {
-    loop {
+// pub fn fn_forever() -> ! {
+//     loop {
         
-    }
-}
+//     }
+// }
