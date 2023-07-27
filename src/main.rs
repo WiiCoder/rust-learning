@@ -54,5 +54,15 @@ fn main() {
     // base_04: quote type
     println!("========== {} ==========", "base_04: quote type start");
     base_04::string_slice();
+    base_04::string_str_translate();
+    base_04::string_operation();
+    base_04::string_transfer();
+    base_04::string_utf8_operation();
+
+    base_04::tuple_example();
+    base_04::struct_example();
+    base_04::tuple_struct();
+
+    base_04::enum_example();
     println!("========== {} ==========", "base_04: quote type end");
 }
