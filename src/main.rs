@@ -3,6 +3,7 @@ mod base_02;
 mod base_03;
 mod base_04;
 mod base_05;
+mod base_06;
 
 fn main() {
     // base_01: variable
@@ -76,4 +77,9 @@ fn main() {
     base_05::while_example();
     base_05::loop_example();
     println!("========== {} ==========", "base_05: flow control");
+
+    // base_06: pattern matching
+    println!("========== {} ==========", "base_06: pattern matching");
+    base_06::match_example();
+    println!("========== {} ==========", "base_06: pattern matching");
 }
