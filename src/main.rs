@@ -2,6 +2,7 @@ mod base_01;
 mod base_02;
 mod base_03;
 mod base_04;
+mod base_05;
 
 fn main() {
     // base_01: variable
@@ -67,4 +68,12 @@ fn main() {
 
     base_04::array_example();
     println!("========== {} ==========", "base_04: quote type end");
+
+    // base_05: flow control 
+    println!("========== {} ==========", "base_05: flow control");
+    base_05::ifelse_example();
+    base_05::for_example();
+    base_05::while_example();
+    base_05::loop_example();
+    println!("========== {} ==========", "base_05: flow control");
 }
