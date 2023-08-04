@@ -1,3 +1,5 @@
+use std::io;
+
 // 字符串和切片 String and slice
 pub fn string_slice() {
     let s = String::from("value");
@@ -230,7 +232,7 @@ enum PokerSuit {
 #[derive(Debug)]
 enum Message {
     Quit,
-    Move { x: i32, y: i32 },
+    Move { _x: i32, _y: i32 },
     Write(String),
     ChangeColor(i32, i32, i32),
 }
@@ -241,7 +243,7 @@ pub fn enum_example() {
     println!("{:?}, {:?}", heart, diamond);
 
     let m1 = Message::Quit;
-    let m2 = Message::Move { x: 1, y: 2 };
+    let m2 = Message::Move { _x: 1, _y: 2 };
     let m3 = Message::Write(String::from("value"));
     let m4 = Message::ChangeColor(99, 99, 99);
     println!("{:?}, {:?}, {:?}, {:?}", m1, m2, m3, m4);
@@ -251,3 +253,38 @@ pub fn enum_example() {
     println!("{:?}, {:?}", some, absent);
 }
 
+// 数组 array, 长度固定、类型相同、依次排序
+pub fn array_example() {
+    // [T; len], T: 类型， len: 长度
+    let a = [1, 2, 3, 4, 5];
+    println!("{:?}", a);
+
+    let a: [i32; 5] = [1, 2, 3, 4, 5];
+    println!("{:?}", a);
+
+    // [V:N] V值重复出现N次
+    let a: [i32; 5] = [3; 5];
+    println!("{:?}", a);
+
+    let mut index = String::new();
+
+    io::stdin()
+        .read_line(&mut index)
+        .expect("Failed to read line");
+
+    let index: usize = index
+        .trim()
+        .parse()
+        .expect("Index entered was not a number");
+
+    let element = a[index];
+    println!("index:{} is: {}", index, element);
+
+    let string_arr: [String; 8] = std::array::from_fn(|_i| String::from("rust"));
+    println!("{:#?}", string_arr);
+
+    let a:[i32;5] = [1,2,3,4,5];
+    let slice: &[i32] = &a[1..3];
+    assert_eq!(slice, &[2,3]);
+
+}

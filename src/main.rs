@@ -64,5 +64,7 @@ fn main() {
     base_04::tuple_struct();
 
     base_04::enum_example();
+
+    base_04::array_example();
     println!("========== {} ==========", "base_04: quote type end");
 }
