@@ -19,6 +19,7 @@
  *
  */
 #[derive(Debug)]
+#[allow(unused)]
 enum Direction {
     East,
     West,
@@ -27,11 +28,13 @@ enum Direction {
 }
 
 #[derive(Debug)]
+#[allow(unused)]
 enum UsState {
     Alabama,
     Alaska,
 }
 
+#[allow(unused)]
 enum Coin {
     Penny,
     Nickel,
@@ -39,6 +42,7 @@ enum Coin {
     Quarter(UsState),
 }
 
+#[allow(unused)]
 enum IpAddr {
     IPv4,
     IPv6,

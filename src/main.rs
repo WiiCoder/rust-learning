@@ -4,6 +4,7 @@ mod base_03;
 mod base_04;
 mod base_05;
 mod base_06;
+mod base_07;
 
 fn main() {
     // base_01: variable
@@ -70,7 +71,7 @@ fn main() {
     base_04::array_example();
     println!("========== {} ==========", "base_04: quote type end");
 
-    // base_05: flow control 
+    // base_05: flow control
     println!("========== {} ==========", "base_05: flow control");
     base_05::ifelse_example();
     base_05::for_example();
@@ -87,4 +88,9 @@ fn main() {
 
     base_06::option_example();
     println!("========== {} ==========", "base_06: pattern matching");
+
+    // base_07: method
+    println!("========== {} ==========", "base_07: method");
+    base_07::method_example();
+    println!("========== {} ==========", "base_07: method");
 }
