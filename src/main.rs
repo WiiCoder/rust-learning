@@ -81,5 +81,10 @@ fn main() {
     // base_06: pattern matching
     println!("========== {} ==========", "base_06: pattern matching");
     base_06::match_example();
+    base_06::if_let_example();
+    base_06::matches_macro_example();
+    base_06::masking_example();
+
+    base_06::option_example();
     println!("========== {} ==========", "base_06: pattern matching");
 }
