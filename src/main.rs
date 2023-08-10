@@ -7,6 +7,7 @@ mod base_06;
 mod base_07;
 mod base_08;
 mod base_09;
+mod base_10;
 
 fn main() {
     // base_01: variable
@@ -112,5 +113,12 @@ fn main() {
     base_09::hash_map_example();
     println!("========== {} ==========", "base_09: collection");
 
-    
+    // base_10: 生命周期 life cycle
+    println!("========== {} ==========", "base_10: life cycle");
+    base_10::life_cycle_example();
+    println!("========== {} ==========", "base_10: life cycle");
+
+    // 生命周期 'static 意味着能和程序活得一样久，例如字符串字面量和特征对象
+    // 实在遇到解决不了的生命周期标注问题，可以尝试 T: 'static，有时候它会给你奇迹
+    let _: &'static str = "我没啥优点，就是活得久，嘿嘿";
 }
