@@ -345,12 +345,14 @@ pub fn add_example() {
 
 // 格式化输出案例
 #[derive(Debug, PartialEq)]
+#[allow(unused)]
 enum FileState {
     Open,
     Closed,
 }
 
 #[derive(Debug)]
+#[allow(unused)]
 struct File {
     name: String,
     data: Vec<u8>,

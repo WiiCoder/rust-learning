@@ -6,6 +6,7 @@ mod base_05;
 mod base_06;
 mod base_07;
 mod base_08;
+mod base_09;
 
 fn main() {
     // base_01: variable
@@ -104,4 +105,12 @@ fn main() {
     base_08::add_example();
     base_08::display_example();
     println!("========== {} ==========", "base_08: generics and trait");
+
+    // base_09: 集合类型 collection
+    println!("========== {} ==========", "base_09: collection");
+    base_09::vector_example();
+    base_09::hash_map_example();
+    println!("========== {} ==========", "base_09: collection");
+
+    
 }
