@@ -5,6 +5,7 @@ mod base_04;
 mod base_05;
 mod base_06;
 mod base_07;
+mod base_08;
 
 fn main() {
     // base_01: variable
@@ -93,4 +94,14 @@ fn main() {
     println!("========== {} ==========", "base_07: method");
     base_07::method_example();
     println!("========== {} ==========", "base_07: method");
+
+    // base_08: 泛型和特征 generics and trait
+    println!("========== {} ==========", "base_08: generics and trait");
+    base_08::generics_example();
+
+    base_08::trait_example();
+
+    base_08::add_example();
+    base_08::display_example();
+    println!("========== {} ==========", "base_08: generics and trait");
 }
