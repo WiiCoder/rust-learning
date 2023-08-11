@@ -78,4 +78,8 @@ pub fn method_example() {
     msg.call();
 }
 
-
+pub fn main(){
+    println!("========== {} ==========", "base_07: method");
+    method_example();
+    println!("========== {} ==========", "base_07: method");
+}

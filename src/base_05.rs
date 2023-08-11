@@ -86,3 +86,12 @@ pub fn loop_example() {
 
     println!("loop result:{}", result);
 }
+
+pub fn main() {
+    println!("========== {} ==========", "base_05: flow control");
+    ifelse_example();
+    for_example();
+    while_example();
+    loop_example();
+    println!("========== {} ==========", "base_05: flow control");
+}

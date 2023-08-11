@@ -181,12 +181,12 @@ fn fu_add(i: i32, j: i32) -> i32 {
 
 // 无返回值()
 pub fn fn_report<T: Debug>(item: T) {
-    fu_add(1,2);
+    fu_add(1, 2);
     println!("{:?}", item);
 }
 
 // 显示返回 ()
-pub fn fn_clear(text: &mut String) -> (){
+pub fn fn_clear(text: &mut String) -> () {
     *text = String::from("");
 }
 
@@ -198,6 +198,26 @@ pub fn fn_clear(text: &mut String) -> (){
 // 无法跳出循环，也是永不返回
 // pub fn fn_forever() -> ! {
 //     loop {
-        
+
 //     }
 // }
+
+pub fn main() {
+    println!("========== {} ==========", "base_02: base type start");
+    int_type();
+    int_overflow();
+    float_type();
+    float_non();
+    number_operation();
+    bit_operation();
+    for_range();
+    rational_complex();
+    char_type();
+    bool_type();
+    statement_expression();
+    fn_report(5);
+    fn_clear(&mut "a".to_string());
+    // fn_dead_end();
+    // fn_forever();
+    println!("========== {} ==========", "base_02: base type end");
+}

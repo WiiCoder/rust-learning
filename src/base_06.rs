@@ -190,3 +190,13 @@ pub fn option_example() {
     let none = plus_one(None);
     println!("none {:?}", none);
 }
+
+pub fn main() {
+    println!("========== {} ==========", "base_06: pattern matching");
+    match_example();
+    if_let_example();
+    matches_macro_example();
+    masking_example();
+    option_example();
+    println!("========== {} ==========", "base_06: pattern matching");
+}

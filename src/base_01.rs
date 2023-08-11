@@ -64,3 +64,14 @@ pub fn variable_shadowing() {
     }
     println!("x: {}", x);
 }
+
+pub fn main() {
+    println!("========== {} ==========", "base_01: variable start");
+    variables();
+    variable_unused_warn();
+    variable_destruction();
+    variable_destruction_assign();
+    variable_constant_discrepancy();
+    variable_shadowing();
+    println!("========== {} ==========", "base_01: variable end");
+}

@@ -32,4 +32,14 @@ pub fn life_cycle_example() {
         result = longest(string1.as_str(), string2.as_str());
     }
     println!("The longest string is {}", result);
+
+    // 生命周期 'static 意味着能和程序活得一样久，例如字符串字面量和特征对象
+    // 实在遇到解决不了的生命周期标注问题，可以尝试 T: 'static，有时候它会给你奇迹
+    let _: &'static str = "我没啥优点，就是活得久，嘿嘿";
+}
+
+pub fn main() {
+    println!("========== {} ==========", "base_10: life cycle");
+    life_cycle_example();
+    println!("========== {} ==========", "base_10: life cycle");
 }

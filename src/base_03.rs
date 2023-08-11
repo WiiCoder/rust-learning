@@ -92,3 +92,14 @@ pub fn repeat_mutable_borrow() {
 
     println!("{}", r3);
 }
+
+pub fn main() {
+    println!("========== {} ==========", "base_03: Ownership borrowing");
+    example();
+    pass_return();
+    quote();
+    immutable_quote();
+    mutable_borrow();
+    repeat_mutable_borrow();
+    println!("========== {} ==========", "base_03: Ownership borrowing");
+}

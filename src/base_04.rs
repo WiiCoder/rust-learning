@@ -283,8 +283,25 @@ pub fn array_example() {
     let string_arr: [String; 8] = std::array::from_fn(|_i| String::from("rust"));
     println!("{:#?}", string_arr);
 
-    let a:[i32;5] = [1,2,3,4,5];
+    let a: [i32; 5] = [1, 2, 3, 4, 5];
     let slice: &[i32] = &a[1..3];
-    assert_eq!(slice, &[2,3]);
+    assert_eq!(slice, &[2, 3]);
+}
 
+pub fn main() {
+    println!("========== {} ==========", "base_04: quote type start");
+    string_slice();
+    string_str_translate();
+    string_operation();
+    string_transfer();
+    string_utf8_operation();
+
+    tuple_example();
+    struct_example();
+    tuple_struct();
+
+    enum_example();
+
+    array_example();
+    println!("========== {} ==========", "base_04: quote type end");
 }

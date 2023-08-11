@@ -390,3 +390,14 @@ pub fn display_example() {
     println!("{:?}", f6);
     println!("{}", f6);
 }
+
+pub fn main() {
+    println!("========== {} ==========", "base_08: generics and trait");
+    generics_example();
+
+    trait_example();
+
+    add_example();
+    display_example();
+    println!("========== {} ==========", "base_08: generics and trait");
+}

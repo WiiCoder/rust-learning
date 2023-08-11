@@ -191,3 +191,10 @@ pub fn hash_map_example() {
 
     println!("{:?}", map);
 }
+
+pub fn main() {
+    println!("========== {} ==========", "base_09: collection");
+    vector_example();
+    hash_map_example();
+    println!("========== {} ==========", "base_09: collection");
+}
